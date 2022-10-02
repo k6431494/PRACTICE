@@ -1,8 +1,11 @@
 #include<iostream>
 #include <bits/stdc++.h>
 using namespace std;
-void romanToInt(string s)
-{
+
+class Solution {
+public:
+    int romanToInt(string s)
+    {
       int intnumeral=0;
       int length=s.length();
     for(int i=0;i<length;i++)
@@ -85,12 +88,16 @@ void romanToInt(string s)
                 }
             }           
         }   
-       cout<<"The number is : "<< intnumeral; 
+       return intnumeral; 
     }
-int main()
-{
-    string str;
-    getline(cin,str);
-    romanToInt(str);
-    return 0;
-}
+};
+//Driver code
+// int main()
+// {
+//     Solution sol;
+//     string str;
+//     getline(cin,str);
+//     sol.romanToInt(str);
+//     return 0;
+// }
+        
